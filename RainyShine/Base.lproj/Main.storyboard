@@ -87,7 +87,7 @@
                                 <rect key="frame" x="0.0" y="300" width="375" height="367"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="80" id="idO-s8-JNf">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="80" id="idO-s8-JNf" customClass="WeatherCell" customModule="RainyShine" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="idO-s8-JNf" id="8Pg-8L-sal">
@@ -153,6 +153,13 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="dayLabel" destination="47x-vh-aT5" id="yOO-La-HeO"/>
+                                            <outlet property="highTemp" destination="s1t-s9-chi" id="w06-oT-CV6"/>
+                                            <outlet property="lowTemp" destination="ZW8-cX-HRB" id="frG-XT-W0c"/>
+                                            <outlet property="weatherIcon" destination="gWD-8x-PPu" id="g3p-aY-ruO"/>
+                                            <outlet property="weatherType" destination="47x-vh-aT5" id="gxt-g4-tGu"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
